@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu:700');
+.temp-stats{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gaegu', cursive;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.basic-text{
+    font-size: 1.5em;
+    font-family: 'Gaegu', cursive;
+    height: 150px;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.basic-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    &.spell{
+        padding-top: 35px;
+    }
+    &.done{
+        padding-top: 50px
+    }
+}
+.basic-select{
+    width: 80vw;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: wheat;
+    font-size: 1.4em;
+}
+.basic-select > option {
+    width: 10vw !important
+}
+.bottom-description{
+    font-size: 1.75em;
+    font-family:'Gaegu', cursive;
+    font-weight: lighter;
+    background-color: rgba(0,0,0,.2);
+    &.login-title{
+        position: absolute;
+        z-index: 1;
+        background-color: red;
+        border: solid;
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+        text-align: center;
+        font-size: 2em;
+    }
+}
+.hitpoints{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.5em;
+    font-family: 'Gaegu', cursive;
+    padding-right: 25px
+}
+
+.skill-element{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.stats-display{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid;
+    border-color: #41403E;
+    margin-left: 40px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    &.str{
+        background-color: rgba(255, 165, 0, 0.75)
+    }
+    &.dex{
+        background-color: rgba(0, 255, 0, 0.75)
+    }
+    &.con{
+        background-color: rgba(255, 0, 0, 0.75)
+    }
+    &.int{
+        background-color: rgba(0, 0, 255, 0.75)
+    }
+    &.wis{
+        background-color: rgba(160, 0, 160, 0.75)
+    }
+    &.cha{
+        background-color: rgba(0, 160, 160, 0.75)
+    }
+}
+.stats-number{
+    font-size: 2em;
+    font-style: oblique;
+    font-weight: bold;
+}
+.stats-name{
+    font-weight: bold;
+}
+.stats-bonus{
+    font-style: italic;
+    font-weight: lighter;
+    border: solid 3px;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.5em;
+}
+.stats-hitpoints{
+        position: relative;
+    width: 100px;
+    height: 90px;
+    float: left;
+}
+
+.spell-description {
+    font-size: 1.2em;
+    font-family: 'Gaegu', cursive;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: dashed 3px #41403E;
+    height: 150px;
+    width: 90vw;
+    overflow: scroll;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    &.small{
+        width: 195px;
+        height: 160px;
+        margin-top: 25px;
+    }
+}
+
+.character-select{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between;
+}
+
+.home-basic{
+    height: 736px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.list-fix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1.75em;
+        &.finish{
+            font-size: 1em;
+            text-align: center;
+        }
+}
+
+.done-skill{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.done-spec{
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    padding-top: 25px;
+}
+.done-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.done-selected{
+    border: dashed;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-color: gainsboro;
+    background-color: seashell;
+    text-align: center;
+    height: 25px;
+    font-size: 20px;
+}
+
+.list-title{
+    font-weight: bolder;
+    font-size: 1.25em;
+    border-bottom: solid;
+}
+
+.health-done{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    width: 200px;
+    font-size: 2em;
+    border: dashed;
+    border-width: 4px;
+    margin-top: 10px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-color: red;
+    background-color: rosybrown;
+    font-family: 'Gaegu', cursive;
+    font-weight: bold;
+}
+
+.character-display{
+    display: flex;
+    font-size: 0.8em;
+    font-family: 'Gaegu', cursive;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: dashed 3px #41403E;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    width: 80vw;
+    height: 175px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 40px;
+}
+
+.select-fixer{
+    background-color: transparent;
+    border: none;
+    font-family: 'Gaegu', cursive;
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Rye);
+
+.spell-banner-parent{
+    position: fixed;
+    margin-left: 305px;
+    z-index: 2;
+    padding-top: 5px;
+}
+.spell-banner {
+    position: absolute;
+    left: 75%;
+    display: block;
+    margin: 0px -200px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #8a1;
+    font: normal 15px/30px 'Rye';
+    text-align: center;
+    color: #451;
+    background: #9b2;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15) inset, 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.spell-banner::before,
+.spell-banner::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -70px;
+    top: 12px;
+    display: block;
+    width: 40px;
+    height: 0px;
+    border: 15px solid #9b2;
+    border-right: 30px solid #791;
+    border-bottom-color: #94b81e;
+    border-left-color: transparent;
+    transform: rotate(-5deg);
+}
+
+.spell-banner::after {
+    left: auto;
+    right: -70px;
+    border-left: 20px solid #791;
+    border-right: 30px solid transparent;
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
